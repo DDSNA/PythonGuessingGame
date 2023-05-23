@@ -41,12 +41,11 @@ for company_name in filtered_data:
         print(url)
         break
 
-
 workbook = Workbook()
 sheet = workbook.active
 sheet.title = 'LinkedIn URLs'
 for i, url in enumerate(linkedin_urls):
-    sheet.cell(row=i+1, column=1, value=url).hyperlink = url
+    sheet.cell(row=i + 1, column=1, value=url).hyperlink = url
 workbook.save('linkedin_urls.xlsx')
 
 with open('linkedin_urls2.csv', 'w', newline='') as file:
@@ -54,3 +53,5 @@ with open('linkedin_urls2.csv', 'w', newline='') as file:
     writer.writerow(['LinkedIn URLs', 'Company name'])
     for company_name, url in zip(filtered_data, linkedin_urls):
         writer.writerow([url, company_name])
+
+
