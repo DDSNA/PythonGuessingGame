@@ -1,6 +1,6 @@
 import pandas as pd
 from googlesearch import search
-# linkedin scares me from doing it from bs4 import BeautifulSoup
+# LinkedIn scares me from doing it from bs4 import BeautifulSoup
 # Ditto import requests
 from openpyxl import Workbook
 import csv
@@ -54,6 +54,3 @@ with open('linkedin_urls2.csv', 'w', newline='') as file:
     writer.writerow(['LinkedIn URLs', 'Company name'])
     for company_name, url in zip(filtered_data, linkedin_urls):
         writer.writerow([url, company_name])
-
-
-
