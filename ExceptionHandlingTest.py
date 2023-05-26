@@ -15,7 +15,7 @@ time.sleep(1)
 
 # Obtain username
 
-print("User`s name:")
+print("User`s name:" + "\n")
 time.sleep(1)
 username = input()
 time.sleep(1)
@@ -30,7 +30,7 @@ print("...")
 time.sleep(1)
 print("...")
 time.sleep(1)
-print("1 and 40")
+print("1 and 40!")
 
 # time.sleep(0.3)
 # print("Boooo! Is the ghost of debugging! Close your eyes!")
@@ -94,6 +94,7 @@ Scoreboard.index(username)
 # TODO: Create a leaderboard
 # TODO: Create a *permanent* leaderboard
 # TODO: Create a basic scoring system (maybe -1 for wrong and +5 for right?)
+# TODO: Show how many guesses are left
 
 print("The users who tried this challenge before are: " + str(Scoreboard) + ". You should be proud of yourself")
 print("")
