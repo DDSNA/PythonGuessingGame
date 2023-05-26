@@ -39,6 +39,7 @@ print("DEBUG DEBUG DEBUG SPOILER: The special number i'm thinking of is..." + st
 
 for guessesTaken in range(1, 5):
     print("Take a guess: ")
+    print("DEBUG: Guesses taken: " + str(guessesTaken))
 
     try:
         guess = int(input())
@@ -54,8 +55,10 @@ for guessesTaken in range(1, 5):
             print("Try again. Last chance before I shutdown")
         else:
             print("Processing guess. Beep-Boop...")
+            time.sleep(0.5)
     else:
         print("Processing guess. Beep-Boop...")
+        time.sleep(0.5)
 
     if guess < specialNumber:
         print("Oops, that's not the number I was thinking about! Mine is a bit bigger")
@@ -72,6 +75,10 @@ else:
 # Scoreboard creation
 Scoreboard = ["Dan the Creator", str(username)]
 Scoreboard.index(username)
+
+# TODO: Create a leaderboard
+# TODO: Create a *permanent* leaderboard
+# TODO: Create a basic scoring system (maybe -1 for wrong and +5 for right?)
 
 print("The users who tried this challenge before are: " + str(Scoreboard) + ". You should be proud of yourself")
 print("")
