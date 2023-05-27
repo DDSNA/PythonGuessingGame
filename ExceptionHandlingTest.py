@@ -8,7 +8,7 @@ time.sleep(1)
 print("I am a guessing game with numbers :)")
 
 time.sleep(1.33333)
-print("Call me... Dan's guessing game V1" + "\n")
+print("Call me... Dan's guessing game V1.1" + "\n")
 time.sleep(1)
 print("What is your name?")
 time.sleep(1)
@@ -84,8 +84,11 @@ while guessesTaken < 5:
     elif guess > specialNumber:
         print("Darn, that's bigger than I was thinking. Try again!")
     else:
+        print("Hooray! You got this!")
         break
         # The condition above is for the correct guess
+
+
 
 # Scoreboard creation
 Scoreboard = ["Dan the Creator", str(username)]
@@ -96,9 +99,14 @@ Scoreboard.index(username)
 # TODO: Create a basic scoring system (maybe -1 for wrong and +5 for right?)
 # TODO: Show how many guesses are left
 
-print("The users who tried this challenge before are: " + str(Scoreboard) + ". You should be proud of yourself")
-print("")
+# print("The users who tried this challenge before are: " + str(Scoreboard) + ". You should be proud of yourself")
+# print("")
+
 print("SCORE BOARD")
 
 for username in Scoreboard:
     print(str(Scoreboard.index(username)) + ". " + str(username))
+
+print("\n" * 3 + "This program will close in 50 seconds. Thank you for playing!")
+
+time.sleep(50)
